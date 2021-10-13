@@ -1,0 +1,33 @@
+{
+  "env": {
+    "production": {
+      "plugins": ["transform-remove-console"]
+    }
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "extensions": [".tsx", ".ts"],
+        "alias": {
+          "#src": "./src",
+          "#assets": "./src/assets",
+          "#api": "./src/service/network/api",
+          "#animated": "./src/common/animated",
+          "#common": "./src/common",
+          "#config": "./src/config",
+          "#components": "./src/components",
+          "#models": "./src/service/network/model",
+          "#navigation": "./src/navigation/NavigationUtil",
+          "#R": "./src/assets/R.ts",
+          "#screens": "./src/screens",
+          "#storage": "./src/service/storage",
+          "#theme": "./src/theme",
+          "#utils": "./src/utils",
+          "#redux": "./src/redux/slices"
+        }
+      }
+    ]
+  ]
+}

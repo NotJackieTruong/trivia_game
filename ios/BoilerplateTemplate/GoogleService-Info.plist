@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>563714331980-9rbvpsoff969qjchu1v0mov66vg5goac.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.563714331980-9rbvpsoff969qjchu1v0mov66vg5goac</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>563714331980-u2j96d6cuj6346v9i5bcun0ql4qbnqhb.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAarcZW75quMZTvB3spqlxHEdewx8_ucxk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>563714331980</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.base</string>
+	<key>PROJECT_ID</key>
+	<string>tutor-8624c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tutor-8624c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:563714331980:ios:a93acdf63da70a6b242be9</string>
+	<key>DATABASE_URL</key>
+	<string>https://tutor-8624c.firebaseio.com</string>
+</dict>
+</plist>
