@@ -1,5 +1,5 @@
 import { Edge } from 'react-native-safe-area-context';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 
 export interface ScreenWrapperProps {
@@ -30,7 +30,7 @@ export interface ScreenWrapperProps {
   /**
    * Title thanh header
    */
-  titleHeader?: string;
+  titleHeader?: string | ReactNode;
 
   reload?: () => void;
 
@@ -120,4 +120,8 @@ export interface ScreenWrapperProps {
    * @default undefined
    */
   forceInset?: Edge[];
+
+  containerStyle?: object;
+
+  backButtonColor?: string;
 }

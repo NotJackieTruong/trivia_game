@@ -152,7 +152,7 @@ function ScreenWithScrolling(props: ScreenWrapperProps) {
 }
 
 function ScreenWrapperComponent(props: ScreenWrapperProps) {
-  const { scroll = false, titleHeader, rightComponent, leftComponent, back = false, dialogLoading, unsafe } = props;
+  const { scroll = false, titleHeader, rightComponent, leftComponent, back = false, dialogLoading, unsafe, containerStyle } = props;
   const renderBody = () => {
     const { isLoading, isError, reload } = props;
     if (isLoading) {
@@ -166,7 +166,7 @@ function ScreenWrapperComponent(props: ScreenWrapperProps) {
   return (
     <Block style={[styles.root]} color={props.backgroundColor}>
       {!!titleHeader && (
-        <RNHeader titleHeader={titleHeader} back={back} rightComponent={rightComponent} leftComponent={leftComponent} />
+        <RNHeader containerStyle={containerStyle} titleHeader={titleHeader} back={back} rightComponent={rightComponent} leftComponent={leftComponent} />
       )}
       {!unsafe ? <RNSafeArea style={{ flex: 1 }}>{renderBody()}</RNSafeArea> : renderBody()}
       {dialogLoading && <LoadingProgress />}

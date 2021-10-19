@@ -23,7 +23,8 @@
     "cpi": "appcenter codepush release-react -a xxx-gmail.com/yyy -d prod --sourcemap-output --output-dir ./build",
     "cpa": "appcenter codepush release-react -a Apps-Windsoft/Utruck_Android-1 -d prod",
     "cp_all": "yarn cpi && yarn cpa",
-    "deploy_sentry": "export SENTRY_PROPERTIES=./ios/sentry.properties && sentry-cli react-native appcenter xxx-gmail.com/yyy ios ./build/CodePush --deployment prod"
+    "deploy_sentry": "export SENTRY_PROPERTIES=./ios/sentry.properties && sentry-cli react-native appcenter xxx-gmail.com/yyy ios ./build/CodePush --deployment prod",
+    "link": "npx react-native link"
   },
   "dependencies": {
     "@react-native-community/blur": "^3.6.0",
