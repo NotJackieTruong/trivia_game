@@ -1,4 +1,4 @@
-package com.utruck;
+package com.test.triviagame;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;

@@ -1,4 +1,4 @@
-package com.utruck;
+package com.test.triviagame;
 
 import android.app.Application;
 import android.content.Context;

@@ -131,7 +131,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.utruck"
+        applicationId "com.test.triviagame"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
