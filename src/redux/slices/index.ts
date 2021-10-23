@@ -1,11 +1,12 @@
+import { combineReducers } from '@reduxjs/toolkit';
 import modeSlice from './modeSlice';
 import orderSlice from './orderSlice';
 import originSlice from './originSlice';
 import productSlice from './productSlice';
+import questionSlice from './questionSlice';
 import switchNavigatorSlice from './switchNavigatorSlice';
 import userSlice from './userSlice';
 
-import { combineReducers } from '@reduxjs/toolkit';
 
 const combinedReducer = combineReducers({
   switchNavigatorSlice,
@@ -13,7 +14,8 @@ const combinedReducer = combineReducers({
   productSlice,
   orderSlice,
   originSlice,
-  modeSlice
+  modeSlice,
+  questionSlice,
 });
 
 const rootReducer = (state: any, action: any) => {
