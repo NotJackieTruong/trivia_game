@@ -1,25 +1,26 @@
-import { ButtonProps } from './Button.props';
-
+import { colors, fonts } from '#theme';
 import debounce from 'lodash.debounce';
-import Animated from 'react-native-reanimated';
-
 import React from 'react';
 import { ActivityIndicator, StyleSheet, Text, TouchableOpacity, TouchableWithoutFeedbackProps } from 'react-native';
+import Animated from 'react-native-reanimated';
+import { ButtonProps } from './Button.props';
 
-import { colors, fonts } from '#theme';
+
+
 
 const styles = StyleSheet.create({
   btnPrimary: {
-    backgroundColor: colors.primary,
-    paddingVertical: 12,
+    backgroundColor: colors.white,
+    paddingVertical: 8,
     flexDirection: 'row',
     justifyContent: 'center',
     marginHorizontal: 10,
-    borderRadius: 8
+    borderRadius: 5,
+    alignItems: 'center'
   },
   txtTitle: {
-    ...fonts.semi_bold18,
-    color: 'white'
+    ...fonts.bold18,
+    color: colors.green.primary
   },
   loading: { position: 'absolute', top: 12, right: 10 }
 });

@@ -1,14 +1,14 @@
-import { InputOutlineProps } from './InputOutline.props';
-
-import Animated, { useAnimatedStyle, useDerivedValue } from 'react-native-reanimated';
-
-import React, { forwardRef, useCallback, useEffect, useMemo, useState } from 'react';
-import { LayoutChangeEvent, StyleSheet, TextInput } from 'react-native';
-
 import { useInterpolate, useSharedTransition } from '#animated';
 import { enhance, onCheckType } from '#common';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Block } from '#components/Block/Block';
+import React, { forwardRef, useCallback, useEffect, useMemo, useState } from 'react';
+import { LayoutChangeEvent, StyleSheet, TextInput } from 'react-native';
+import Animated, { useAnimatedStyle, useDerivedValue } from 'react-native-reanimated';
+import { InputOutlineProps } from './InputOutline.props';
+
+
+
 
 const VERTICAL_PADDING = 10;
 const UN_ACTIVE_COLOR = 'rgb(159,152,146)';

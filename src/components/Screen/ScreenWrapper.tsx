@@ -1,15 +1,16 @@
-import { ScreenWrapperProps } from './ScreenWrapper.props';
+import { enhance } from '#common';
+import { colors } from '#src/theme';
+import React, { memo, useMemo } from 'react';
+import isEqual from 'react-fast-compare';
+import { KeyboardAvoidingView, Platform, SafeAreaView as RNSafeArea, ScrollView, StyleSheet } from 'react-native';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Block } from '../Block/Block';
-
 import Error from '../Error/Error';
 import Loading from '../Loading';
 import LoadingProgress from '../LoadingProgress';
 import RNHeader from '../RNHeader';
-import isEqual from 'react-fast-compare';
-import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
-import React, { memo, useMemo } from 'react';
-import { KeyboardAvoidingView, Platform, SafeAreaView as RNSafeArea, ScrollView, StyleSheet } from 'react-native';
-import { enhance } from '#common';
+import { ScreenWrapperProps } from './ScreenWrapper.props';
+
 
 const styles = StyleSheet.create({
   root: {
@@ -46,7 +47,7 @@ function ScreenWithoutScrolling(props: ScreenWrapperProps) {
     forceInset,
     unsafe,
     children,
-    backgroundColor,
+    backgroundColor = colors.white,
     leftInsetColor = '#ffffff',
     rightInsetColor = '#ffffff'
   } = props;

@@ -57,6 +57,13 @@ export const colors = {
     primaryDark: '#707070',
     primary: '#BBBBBB',
     light: '#E1E1E1'
+  },
+  green: {
+    darker: '#1B0036',
+    dark: '#300062',
+    primary: '#19a08c',
+    light: '#60b6af',
+    lighter: '#d4e8e6'
   }
 };
 

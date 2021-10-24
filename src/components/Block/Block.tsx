@@ -1,9 +1,9 @@
-import { BlockProps } from './Block.props';
-import equals from 'react-fast-compare';
-import React, { memo, useMemo } from 'react';
-import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
-
 import { enhance } from '#common';
+import React, { memo, useMemo } from 'react';
+import equals from 'react-fast-compare';
+import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import { BlockProps } from './Block.props';
+
 
 const styles = StyleSheet.create({
   block: {

@@ -1,14 +1,14 @@
-import { TextProps } from './Text.props';
-
-import equals from 'react-fast-compare';
-
-import React, { memo, useMemo } from 'react';
-import { Text as ReactNativeText, StyleProp, StyleSheet, TextStyle } from 'react-native';
-
 import { enhance } from '#common';
 // import {FontSizeDefault} from '#theme';
 // import {FontDefault} from '#theme/typography';
-import { fonts } from '#theme';
+import { colors, fonts } from '#theme';
+import React, { memo, useMemo } from 'react';
+import equals from 'react-fast-compare';
+import { StyleProp, StyleSheet, Text as ReactNativeText, TextStyle } from 'react-native';
+import { TextProps } from './Text.props';
+
+
+
 
 const styles = StyleSheet.create({
   flex: {
@@ -20,15 +20,15 @@ const getStyleFont = (type: string) => fonts[type];
 
 const TextComponent = (props: TextProps) => {
   const {
-    font = 'regular14',
+    font,
     tx,
     txOptions,
     text,
     children,
     flex,
-    fontSize = 'FONT_13',
+    fontSize = fonts.regular14.fontSize,
     fontWeight,
-    fontFamily,
+    fontFamily = fonts.regular14.fontFamily,
     margin,
     marginLeft,
     marginRight,
@@ -45,7 +45,7 @@ const TextComponent = (props: TextProps) => {
     height,
     alignItems,
     alignSelf,
-    color,
+    color = colors.black,
     center,
     textAlignVertical,
     textTransform,

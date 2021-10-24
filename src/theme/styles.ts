@@ -19,5 +19,6 @@ export const globalStyles = {
     width: 22,
     height: 22
   },
-  divider: { marginTop: spacing.smaller }
+  divider: { marginTop: spacing.smaller },
+  inputHeight: 40
 };
