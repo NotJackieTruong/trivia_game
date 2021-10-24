@@ -1,21 +1,18 @@
-import StackApp from '../stack/StackApp';
-import {
-  STACK_BOTTOM_ADMIN,
-  STACK_BOTTOM_PROVIDER,
-  STACK_BOTTOM_SELLER,
-  STACK_BOTTOM_UN_AUTH
-} from '../stack/StackBottomBar';
-import { BottomTabBar, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator } from '@react-navigation/stack';
-import React from 'react';
-import { Platform, Text } from 'react-native';
 import R from '#assets';
 import { useSelector } from '#common';
 import FstImage from '#components/FstImage/FstImage';
 import { SCREEN_ROUTER, SCREEN_ROUTER_APP } from '#config/screenType';
 import { colors, fonts } from '#theme';
-
 import { isIPhoneX } from '#utils/IPhoneXHelper';
+import { BottomTabBar, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+import React from 'react';
+import { Platform, Text } from 'react-native';
+import StackApp from '../stack/StackApp';
+import {
+  STACK_BOTTOM_UN_AUTH
+} from '../stack/StackBottomBar';
+
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -31,7 +28,7 @@ const TabBarName = {
 
 const renderTabBarIcon = (focused: boolean, route: any) => {
   const sizeIcon = focused ? 30 : 25;
-  const tintColor = focused ? colors.primary : colors.focus;
+  const tintColor = focused ? colors.green.primary : colors.focus;
   return (
     <FstImage
       source={TabBarIcon[route.name]}
@@ -46,7 +43,7 @@ const renderTabBarIcon = (focused: boolean, route: any) => {
 };
 
 const renderTabBarLabel = (focused: boolean, route: any) => {
-  const tintColor = focused ? colors.primary : colors.focus;
+  const tintColor = focused ? colors.green.primary : colors.focus;
   return <Text children={TabBarName[route.name]} style={[fonts.regular12, { color: tintColor }]} />;
 };
 
@@ -67,7 +64,9 @@ const MainTab = () => {
             props.style,
             {
               // eslint-disable-next-line no-nested-ternary
-              height: Platform.OS !== 'ios' ? 60 : isIPhoneX() ? 90 : 80
+              height: Platform.OS !== 'ios' ? 60 : isIPhoneX() ? 90 : 80,
+              backgroundColor: colors.white,
+              borderTopColor: colors.green.primary,
             }
           ]}
         />
